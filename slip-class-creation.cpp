@@ -17,6 +17,7 @@
 ******************************************/
 #define PI 3.14159
 using namespace std;
+
 /****************************************
 *         Class definitions
 ****************************************/
@@ -28,12 +29,7 @@ class Slip
               int type;
       public:
              //Constructor
-             Slip()             //Constructor that assigns size of boat
-             {
-                 cout << "slip constructor";
-                 length = 0;
-                 price = 0;
-             }
+             Slip();             //Constructor that assigns size of boat and ID no.
 
              //Destructor
              ~Slip()
@@ -55,7 +51,6 @@ class Slip
 
              //Member function prototypes
              Slip(int length);
-             int boatYard();               //creates 10x10 array and names each slip with a number 1-100
              bool vacancy();             //Identifies the vacancy of a slip
              void display();             //Displays the arrays ID no. and its vacancy
 
@@ -68,37 +63,12 @@ enum type {small, medium, large, unknown};
 /****************************************
 *         member functions
 ****************************************/
-Slip :: Slip(int length)
+///Constructors:
+///This constructor creates an array to assign each slip an ID no.(1-100)
+Slip :: Slip()
 {
-
-     setLength(length);
-
-     if (getLength() <= 25 && getLength() > 0)
-        {
-            setType(1);    //'s' is returned for Small boats
-        }
-
-     else if (getLength() < 50 && getLength() > 25)
-        {
-            setType(2);   //'m' is returned for Medium sized boats
-        }
-
-     else if (getLength() > 50 && getLength() < 200)
-        {
-           setType(3);    //'l' is returned for Large boats
-        }
-
-     else
-        {
-           setType(4);   //'x' is returned if boat length is < 0 or > 200
-        }
-}
-
-//TODO: This member function will create an array for the boat yard
-//      to return the id. Should perhaps be made into a constructor that returns the
-//      Vacancy of a specific slip. I don't know.
-int Slip :: boatYard()
-{
+    length = 0;
+    price = 0;
     int x = 1; //counter for future use
     int slipMap[1][100]; //initializes 1 by 100 array for slips
 
@@ -106,19 +76,46 @@ int Slip :: boatYard()
     for (x=1; x<101; x++)
         {
               slipMap[0][x] = x;
-              //cout << slipMap[0][x] << " ";   //Uncomment this line to have the array printed
+              //cout << slipMap[0][x] << " ";   //Uncomment this line to have the array printed out
         }
+
+
+
 
 }
 
-/*int Slip :: slipPrice()
+///This constructor sets the type and price of boat slip based on the length defined in the parameters
+Slip :: Slip(int length)
 {
-    if (getLength == 's')
-       {
-           return
-}*/
 
-///No idea what this is supposed to be, but Cruze created it
+     setLength(length);
+
+     if (getLength() <= 25 && getLength() > 0)
+        {
+            setType(1);    //'small' is returned for Small boats
+            setPrice(100);
+        }
+
+     else if (getLength() < 50 && getLength() > 25)
+        {
+            setType(2);   //'medium' is returned for Medium sized boats
+            setPrice(200);
+        }
+
+     else if (getLength() > 50 && getLength() < 200)
+        {
+           setType(3);    //'large' is returned for Large boats
+           setPrice(400);
+        }
+
+     else
+        {
+           setType(4);   //'unknown' is returned if boat length is < 0 or > 200
+           setPrice(0);
+        }
+}
+
+///No idea how this is supposed to work, but Cruze created it
 ///So I won't delete it.    --Grant
 bool Slip :: vacancy()
 {
@@ -128,7 +125,7 @@ void Slip :: display()
 {
     cout << "length:            "     << getLength() << "\n";
     cout << "price:             "     << getPrice() << "\n";
-    cout << "slip number        "; //Haven't completed the function yet.
+    cout << "slip number      \n"; //Haven't completed the function yet.
     cout << "type:              ";
     switch(getType())
     {
@@ -140,6 +137,7 @@ void Slip :: display()
             break;
         case 4: cout << "unknown\n";
     }
+    cout << "vacancy:           \n";
 }
 
 /****************************************
@@ -154,11 +152,11 @@ int main()
     /*******************************
     *     local variables
     ******************************/
-    Slip test(10);
-    test.display();        //should return 's'
-    cout << "\n\n\n";
+    Slip test(10);          //tests constructo
+    test.display();         //tests display function
+    cout << "\n\n";
 
-    test.boatYard();
+    system("pause");
 	return 0;
 }  // end main
 
