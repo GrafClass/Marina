@@ -30,6 +30,7 @@ class Slip
       public:
              //Constructor
              Slip();             //Constructor that assigns size of boat and ID no.
+             Slip(int length);
 
              //Destructor
              ~Slip()
@@ -50,9 +51,8 @@ class Slip
              //int getSlip()                     {return slip;}
 
              //Member function prototypes
-             Slip(int length);
-             bool vacancy();             //Identifies the vacancy of a slip
-             void display();             //Displays the arrays ID no. and its vacancy
+             bool vacancy(int id);       //Identifies the vacancy of a slip by passing its id no. in the parameters.
+             void display();             //Displays the slip ID number, length, type and its vacancy.
 
 };
 /****************************************
@@ -115,9 +115,9 @@ Slip :: Slip(int length)
         }
 }
 
-///No idea how this is supposed to work, but Cruze created it
-///So I won't delete it.    --Grant
-bool Slip :: vacancy()
+///This function will return the vacancy of a slip
+///'0' = empty;     '1' = occupied;
+bool Slip :: vacancy(int id)
 {
 }
 
@@ -125,7 +125,7 @@ void Slip :: display()
 {
     cout << "length:            "     << getLength() << "\n";
     cout << "price:             "     << getPrice() << "\n";
-    cout << "slip number      \n"; //Haven't completed the function yet.
+    cout << "slip number:      \n"; //Haven't completed the function yet.
     cout << "type:              ";
     switch(getType())
     {
@@ -137,7 +137,15 @@ void Slip :: display()
             break;
         case 4: cout << "unknown\n";
     }
-    cout << "vacancy:           \n";
+    cout << "vacancy:          \n";
+/*    switch(getUse())
+    {
+        case 0: cout << "Open\n";
+            break;
+        case 1: cout << "Occupied\n";
+            break;
+        case 2: cout << "unknown\n";
+    }*/
 }
 
 /****************************************
@@ -156,7 +164,6 @@ int main()
     test.display();         //tests display function
     cout << "\n\n";
 
-    system("pause");
 	return 0;
 }  // end main
 
