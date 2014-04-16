@@ -1,7 +1,7 @@
 // ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                   //
-// PROGRAM NAME:    Marina                                                                           //
-// AUTHOR:          Alexander Pitkin                                                                 //
+// PROGRAM NAME:    Marina Person and Address                                                        //
+// AUTHOR:          Alex and Mena                                                                    //
 // DATE DUE:        March 27, 2014                                                                   //
 // REMARKS:
 //                                                                                                   //
@@ -9,6 +9,7 @@
 
 // LIBRARY INCLUDES
 #include <iostream>
+#include <string>
 
 // PRE-PROCESSOR
 using namespace std;
@@ -23,57 +24,78 @@ using namespace std;
 class Person
 {
 private:
-    char name[40];                                              /// First Name
-    int custID;                                                 /// Customer ID
-    char phone[10];                                             /// Phone number
-    char password[4];                                           /// Password to access marina
+    string name;                                                // First Name
+    int custID;                                                 // Customer ID
+    string phone;                                               // Phone number
+    string password;                                            // Password to access marina
 public:
     
-    // CONSTRUCTOR
-    Person (char n[40], int ID, char p[10], char b[40], char pass[4]);
+    // CONSTRUCTORS
+    Person (string na, int i, string p, string pa);
     Person();
     
     // SETTERS
-    void setName(char x[40])        {strcpy(name, x);}          /// Set name
-    void setCustID(int x)           {custID = x;}               /// Set customer ID
-    void setPhone(char x[10])       {strcpy(phone, x);}         /// Set phone number
-    void setPassword(char x[4])     {strcpy(password, x);}      /// Set password
+    void setName(string x)          {name = x;}                 // Set name
+    void setCustID(int x)           {custID = x;}               // Set customer ID
+    void setPhone(string x)         {phone = x;}                // Set phone number
+    void setPassword(string x)      {password = x;}             // Set password
     
     // GETTERS
-    string getName()                {return name;}              /// Get name
-    int getCustID()                 {return custID;}            /// Set customer ID
-    string getPhone()               {return phone;}             /// Set phone number
-    string getPassword()            {return password;}          /// Set password
+    string getName()                {return name;}              // Get name
+    int getCustID()                 {return custID;}            // Set customer ID
+    string getPhone()               {return phone;}             // Set phone number
+    string getPassword()            {return password;}          // Set password
 };
 
 class Address
 {
 private:
-         char street[40];                                       /// Street
-         char city[40];                                         /// City
-         char state[2];                                         /// State
-         char zip[5];                                           /// Zip code
+         string street;                                         // Street
+         string city;                                           // City
+         string state;                                          // State
+         string zip;                                            // Zip code
 public:
     
-    // CONSTRUCTOR
-    Address (char s[40], char c[40], char st[2], char z[5]);
+    // CONSTRUCTORS
+    Address (string s, string c, string st, string z);
     Address();
     
     // SETTERS
-    void setStreet(char x[40])      {strcpy(street, x);}        /// Set street
-    void setCity(char x[40])        {strcpy(city, x);}          /// Set city
-    void setState(char x[2])        {strcpy(state, x);}         /// Set state
-    void setZip(char x[5])          {strcpy(zip, x);}           /// Set zip
-        
+    void setStreet(string x)        {street = x;}               // Set street
+    void setCity(string x)          {city = x;}                 // Set city
+    void setState(string x)         {state = x;}                // Set state
+    void setZip(string x)           {zip = x;}                  // Set zip
+    
+    // GETTERS
+    string getStreet()              {return street;}
+    string getCity()                {return city;}
+    string getState()               {return state;}
+    string getZip()                 {return zip;}
 };
+
 // //////////////////////////////////////////////////
 //                                                 //
 // CONSTRUCTORS                                    //
 //                                                 //
 // //////////////////////////////////////////////////
 
-// ROAD VEHICLE CONSTRUCTOR /////////////////////////
+// PERSON CONSTRUCTOR ///////////////////////////////
+Person :: Person (string na, int i, string p, string pa)
+{
+    setName(na);                                                // Set Name
+    setCustID(i);                                               // Set ID
+    setPhone(p);                                                // Set Phone
+    setPassword(pa);                                            // Set Password
+}
 
+// PERSON CONSTRUCTOR ///////////////////////////////
+Address :: Address (string s, string c, string st, string z)
+{
+    setStreet(s);                                               // Set Street
+    setCity(c);                                                 // Set City
+    setState(st);                                               // Set Street
+    setZip(z);                                                  // Set ZIP
+}
 
 // //////////////////////////////////////////////////
 //                                                 //
