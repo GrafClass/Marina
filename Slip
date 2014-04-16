@@ -1,0 +1,167 @@
+/**************************************************
+* 
+*      program name:       Slip-Class
+*      Author:             Grant & Cruze
+*      date due:            
+*      remarks:            Slip has a person
+***************************************************/
+
+/******************************************
+*     library includes 
+******************************************/
+#include <iostream>                // needed for I/O
+
+/******************************************
+*     pre-processor
+******************************************/
+#define PI 3.14159
+using namespace std;
+/****************************************
+*         Class definitions
+****************************************/
+class Slip
+{
+      private:
+              int length;
+              int price;
+              int type;
+      public:
+             //Constructor
+             Slip()             //Constructor that assigns size of boat
+             {
+                      cout << "slip constructor";           
+                      length = 0;
+                      price = 0;
+             }
+             
+
+             
+             ~Slip()
+             {
+                     cout << "slip destructor";
+             }
+                      
+             
+             
+             //setters
+             int setLength(int x)              {length = x;}
+             int setPrice(int x)               {price = x;}
+             int setType(int x)                {type = x;}
+             int setSlip(int x)                {slip = x;}
+             
+             //getters
+             int getLength()                   {return length;}
+             int getPrice()                    {return price;}
+             int getType()                     {return type;}
+             int getSlip()                     {return slip;}
+             
+             //Member function prototypes
+             Slip(int length);
+             int slipID();               //creates 10x10 array and names each slip with a number 1-100
+             bool vacancy();             //Identifies the vacancy of a lsip
+             void display();             //Displays the arrays ID's and vacancy
+
+};
+/****************************************
+*       enum 
+****************************************/
+enum type {small, medium, large, unknown};
+
+/****************************************
+*         member functions
+****************************************/
+Slip :: Slip(int length)
+{
+
+     setLength(length);
+     
+     if (getLength() <= 25 && getLength() > 0)
+        {
+            setType(1);    //'s' is returned for Small boats
+        }
+     
+     else if (getLength() < 50 && getLength() > 25)
+        {
+            setType(2);   //'m' is returned for Medium sized boats
+        }
+        
+     else if (getLength() > 50 && getLength() < 200)
+        {
+           setType(3);    //'l' is returned for Large boats
+        }
+        
+     else 
+        {
+           setType(4);   //'x' is returned if boat length is < 0 or > 200
+        } 
+}
+
+
+
+int Slip :: slipID()
+{
+    int x = 0; //counter    
+    int slipMap[10][10]; //initializes 10 by 10 array for slips
+}
+
+
+int Slip :: slipPrice()
+{
+    if (getLength == 's')
+       {
+           return 
+
+bool Slip :: vacancy()
+{
+ }
+void Slip :: display()
+{
+    cout << "length:            "     << getLength() << "\n";
+    cout << "price:             "     << getPrice() << "\n";
+    cout << "slip number        "     <<
+    cout << "type:              ";
+    switch(getType())
+    {
+        case 1: cout << "small\n";
+            break;
+        case 2: cout << "medium\n";
+            break;
+        case 3: cout << "large\n";
+            break;
+        case 4: cout << "unknown\n";
+    }
+}
+                 
+/****************************************
+*          function prototypes
+****************************************/
+
+
+/*****************************************
+*   main() - the function that executes
+*****************************************/
+int main()
+{
+    /*******************************
+    *     local variables
+    ******************************/
+    Slip test(10);
+    test.display();        //should return 'm'
+    cout << "\n";
+    
+    system("PAUSE");               // causes the program to pause
+	return 0;
+}  // end main
+
+
+
+
+
+
+
+
+
+
+
+ 
+
