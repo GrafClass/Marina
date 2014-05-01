@@ -6,7 +6,7 @@
 // REMARKS:                                                                                          //
 //                                                                                                   //
 // ////////////////////////////////////////////////////////////////////////////////////////////////////
-#include "person.h"
+#include "Person.h"
 
 // //////////////////////////////////////////////////
 //                                                 //
@@ -15,7 +15,14 @@
 // //////////////////////////////////////////////////
 
 // PERSON CONSTRUCTOR ///////////////////////////////
-Person::Person (string na, int i, string p, string pa)
+Person::Person()
+{
+    setName("");
+    setCustID(0);
+    setPhone("");
+    setPassword("");
+}
+Person::Person(std::string na, int i, std::string p, std::string pa)
 {
     setName(na);                                                // Set Name
     setCustID(i);                                               // Set ID

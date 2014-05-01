@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = code/Marina.o code/person.o code/address.o
-LINKOBJ  = code/Marina.o code/person.o code/address.o
+OBJ      = code/Marina.o code/Person.o code/Address.o code/Payment.o
+LINKOBJ  = code/Marina.o code/Person.o code/Address.o code/Payment.o
 LIBS     = -L"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
 INCS     = -I"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
 CXXINCS  = -I"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
@@ -28,8 +28,11 @@ $(BIN): $(OBJ)
 code/Marina.o: code/Marina.cpp
 	$(CPP) -c code/Marina.cpp -o code/Marina.o $(CXXFLAGS)
 
-code/person.o: code/person.cpp
-	$(CPP) -c code/person.cpp -o code/person.o $(CXXFLAGS)
+code/Person.o: code/Person.cpp
+	$(CPP) -c code/Person.cpp -o code/Person.o $(CXXFLAGS)
 
-code/address.o: code/address.cpp
-	$(CPP) -c code/address.cpp -o code/address.o $(CXXFLAGS)
+code/Address.o: code/Address.cpp
+	$(CPP) -c code/Address.cpp -o code/Address.o $(CXXFLAGS)
+
+code/Payment.o: code/Payment.cpp
+	$(CPP) -c code/Payment.cpp -o code/Payment.o $(CXXFLAGS)

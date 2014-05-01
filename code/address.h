@@ -6,7 +6,7 @@
 // REMARKS:                                                                                          //   
 //                                                                                                   //
 // ////////////////////////////////////////////////////////////////////////////////////////////////////
-
+#include <string>
 // //////////////////////////////////////////////////
 //                                                 //
 // CLASS DEFINITIONS                               //
@@ -16,25 +16,25 @@
 class Address
 {
 private:
-         string street;                                         // Street
-         string city;                                           // City
-         string state;                                          // State
-         string zip;                                            // Zip code
+         std::string street;                                         // Street
+         std::string city;                                           // City
+         std::string state;                                          // State
+         std::string zip;                                            // Zip code
 public:
     
     // CONSTRUCTORS
-    Address (string s, string c, string st, string z);
+    Address (std::string s, std::string c, std::string st, std::string z);
     Address();
     
     // SETTERS
-    void setStreet(string x)        {street = x;}               // Set street
-    void setCity(string x)          {city = x;}                 // Set city
-    void setState(string x)         {state = x;}                // Set state
-    void setZip(string x)           {zip = x;}                  // Set zip
+    void setStreet(std::string x)        {street = x;}               // Set street
+    void setCity(std::string x)          {city = x;}                 // Set city
+    void setState(std::string x)         {state = x;}                // Set state
+    void setZip(std::string x)           {zip = x;}                  // Set zip
     
     // GETTERS
-    string getStreet()              {return street;}
-    string getCity()                {return city;}
-    string getState()               {return state;}
-    string getZip()                 {return zip;}
+    std::string getStreet()              {return street;}
+    std::string getCity()                {return city;}
+    std::string getState()               {return state;}
+    std::string getZip()                 {return zip;}
 };

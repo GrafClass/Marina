@@ -6,7 +6,7 @@
 // REMARKS:                                                                                          //
 //                                                                                                   //
 // ////////////////////////////////////////////////////////////////////////////////////////////////////
-
+#include "Address.h"
 // //////////////////////////////////////////////////
 //                                                 //
 // CONSTRUCTORS                                    //
@@ -14,7 +14,7 @@
 // //////////////////////////////////////////////////
 
 // ADDRESS CONSTRUCTOR ///////////////////////////////
-Address :: Address (string s, string c, string st, string z)
+Address::Address (std::string s, std::string c, std::string st, std::string z)
 {
     setStreet(s);                                               // Set Street
     setCity(c);                                                 // Set City

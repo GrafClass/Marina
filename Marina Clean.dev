@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000001000000
-UnitCount=5
+UnitCount=7
 
 [VersionInfo]
 Major=1
@@ -91,7 +91,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=code\person.h
+FileName=code\Person.h
 CompileCpp=1
 Folder=Marina
 Compile=1
@@ -100,18 +100,8 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit5]
-FileName=code\address.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
 [Unit6]
-FileName=code\slip.cpp
+FileName=code\Payment.cpp
 CompileCpp=1
 Folder=Marina
 Compile=1
@@ -121,7 +111,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit7]
-FileName=code\slip.h
+FileName=code\Payment.h
 CompileCpp=1
 Folder=Marina
 Compile=1
@@ -141,7 +131,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=code\person.cpp
+FileName=code\Person.cpp
 CompileCpp=1
 Folder=Marina
 Compile=1
@@ -151,9 +141,19 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit4]
-FileName=code\address.h
+FileName=code\Address.cpp
 CompileCpp=1
-Folder=
+Folder=Marina
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit5]
+FileName=code\Address.h
+CompileCpp=1
+Folder=Marina
 Compile=1
 Link=1
 Priority=1000

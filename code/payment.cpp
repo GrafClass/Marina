@@ -3,6 +3,7 @@
 *  Authors: Nathan Vasquez 
 *           Samarjeet Rai
 *******************************************/
+#include "Payment.h"
 //default constructor
 Payment::Payment()
 {
@@ -33,9 +34,9 @@ double Payment :: reCalcTotals()
 // display
 void Payment :: displayPayment()
 {
-     
-     cout << "*****Payment Information*****\n";
-     cout << "Cost:      "<< getSubTotal()<<"\n";
-     cout << "Tax :      "<< getTax() <<"\n";
-     cout << "Total :    "<< getGrandTotal() <<"\n";
+     // todo pass as string to interface class
+     //cout << "*****Payment Information*****\n";
+     //cout << "Cost:      "<< getSubTotal()<<"\n";
+     //cout << "Tax :      "<< getTax() <<"\n";
+     //cout << "Total :    "<< getGrandTotal() <<"\n";
 }
