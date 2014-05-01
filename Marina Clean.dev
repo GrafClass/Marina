@@ -1,6 +1,6 @@
 [Project]
 FileName=Marina Clean.dev
-Name=Project2
+Name=Marina
 Type=1
 Ver=2
 ObjFiles=
@@ -19,7 +19,7 @@ ObjectOutput=
 LogOutput=
 LogOutputEnabled=0
 OverrideOutput=0
-OverrideOutputName=
+OverrideOutputName=Marina Clean.exe
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000001000000
-UnitCount=0
+UnitCount=9
 
 [VersionInfo]
 Major=1
@@ -39,21 +39,21 @@ Build=0
 LanguageID=1033
 CharsetID=1252
 CompanyName=
-FileVersion=
+FileVersion=1.0.0.0
 FileDescription=Developed using the Dev-C++ IDE
 InternalName=
 LegalCopyright=
 LegalTrademarks=
 OriginalFilename=
 ProductName=
-ProductVersion=
+ProductVersion=1.0.0.0
 AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=CISP-1020 Marina\code\Marina.cpp
+FileName=code\Marina.cpp
 CompileCpp=1
-Folder=
+Folder=Marina
 Compile=1
 Link=1
 Priority=1000
@@ -61,9 +61,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=CISP-1020 Marina\payment.cpp
+FileName=code\payment.cpp
 CompileCpp=1
-Folder=Project2
+Folder=Marina
 Compile=1
 Link=1
 Priority=1000
@@ -71,9 +71,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit4]
-FileName=CISP-1020 Marina\slip.cpp
+FileName=code\person.cpp
 CompileCpp=1
-Folder=Project2
+Folder=Marina
 Compile=1
 Link=1
 Priority=1000
@@ -81,9 +81,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit8]
-FileName=CISP-1020 Marina\person.h
+FileName=code\yard.cpp
 CompileCpp=1
-Folder=
+Folder=Marina
 Compile=1
 Link=1
 Priority=1000
@@ -91,9 +91,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit9]
-FileName=CISP-1020 Marina\yard.h
+FileName=code\yard.h
 CompileCpp=1
-Folder=
+Folder=Marina
 Compile=1
 Link=1
 Priority=1000
@@ -111,9 +111,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=CISP-1020 Marina\person.cpp
+FileName=code\payment.h
 CompileCpp=1
-Folder=Project2
+Folder=Marina
 Compile=1
 Link=1
 Priority=1000
@@ -121,9 +121,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
-FileName=CISP-1020 Marina\yard-class-creation.cpp
+FileName=code\person.h
 CompileCpp=1
-Folder=Project2
+Folder=Marina
 Compile=1
 Link=1
 Priority=1000
@@ -131,9 +131,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
-FileName=CISP-1020 Marina\payment.h
+FileName=code\slip.cpp
 CompileCpp=1
-Folder=Project2
+Folder=Marina
 Compile=1
 Link=1
 Priority=1000
@@ -141,9 +141,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit7]
-FileName=CISP-1020 Marina\slip.h
+FileName=code\slip.h
 CompileCpp=1
-Folder=Project2
+Folder=Marina
 Compile=1
 Link=1
 Priority=1000
