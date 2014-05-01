@@ -3,6 +3,7 @@
 *  Authors: Nathan Vasquez 
 *           Samarjeet Rai
 *******************************************/
+#include "Creditcard.h"
 //default constructor
 Credit_Card :: Credit_Card()
 {
@@ -12,6 +13,7 @@ Credit_Card :: Credit_Card()
 
 void Credit_Card :: show()
 {
-       cout << "card number    :  " << getCardNum() <<"\n";
-       cout << "Expiration date:  " << getExpireDate() <<"\n";
+    //TODO pass up to interface class as a string
+       //cout << "card number    :  " << getCardNum() <<"\n";
+       //cout << "Expiration date:  " << getExpireDate() <<"\n";
 }

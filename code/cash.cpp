@@ -3,6 +3,7 @@
 *  Authors: Nathan Vasquez 
 *           Samarjeet Rai
 *******************************************/
+#include "cash.h"
 //default constructer
 Cash :: Cash()
 {
@@ -25,6 +26,7 @@ double Cash :: remChangeTotal()
 //Cash display function
 void Cash :: show()
 {
-     cout << "Amount recieved :"<<getAmtRec()<<"\n";
-     cout << "change :         "<<getChaRem()<<"\n";
+    //TODO pass up to interface class as a string
+     //cout << "Amount recieved :"<<getAmtRec()<<"\n";
+     //cout << "change :         "<<getChaRem()<<"\n";
 }
