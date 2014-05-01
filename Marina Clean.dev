@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000001000000
-UnitCount=9
+UnitCount=5
 
 [VersionInfo]
 Major=1
@@ -60,26 +60,6 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit2]
-FileName=code\payment.cpp
-CompileCpp=1
-Folder=Marina
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit4]
-FileName=code\person.cpp
-CompileCpp=1
-Folder=Marina
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
 [Unit8]
 FileName=code\yard.cpp
 CompileCpp=1
@@ -101,7 +81,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit10]
-FileName=CISP-1020 Marina\yard.cpp
+FileName=code\address.h
 CompileCpp=1
 Folder=
 Compile=1
@@ -111,7 +91,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=code\payment.h
+FileName=code\person.h
 CompileCpp=1
 Folder=Marina
 Compile=1
@@ -121,9 +101,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
-FileName=code\person.h
+FileName=code\address.cpp
 CompileCpp=1
-Folder=Marina
+Folder=
 Compile=1
 Link=1
 Priority=1000
@@ -144,6 +124,36 @@ BuildCmd=
 FileName=code\slip.h
 CompileCpp=1
 Folder=Marina
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit11]
+FileName=code\address.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit2]
+FileName=code\person.cpp
+CompileCpp=1
+Folder=Marina
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit4]
+FileName=code\address.h
+CompileCpp=1
+Folder=
 Compile=1
 Link=1
 Priority=1000

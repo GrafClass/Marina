@@ -1,12 +1,11 @@
 // ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                   //
-// PROGRAM NAME:    Marina Person                                                                    //
+// PROGRAM NAME:    Marina Address                                                                   //
 // AUTHOR:          Alex and Mena                                                                    //
 // DATE DUE:        March 27, 2014                                                                   //
 // REMARKS:                                                                                          //
 //                                                                                                   //
 // ////////////////////////////////////////////////////////////////////////////////////////////////////
-#include "person.h"
 
 // //////////////////////////////////////////////////
 //                                                 //
@@ -14,11 +13,11 @@
 //                                                 //
 // //////////////////////////////////////////////////
 
-// PERSON CONSTRUCTOR ///////////////////////////////
-Person::Person (string na, int i, string p, string pa)
+// ADDRESS CONSTRUCTOR ///////////////////////////////
+Address :: Address (string s, string c, string st, string z)
 {
-    setName(na);                                                // Set Name
-    setCustID(i);                                               // Set ID
-    setPhone(p);                                                // Set Phone
-    setPassword(pa);                                            // Set Password
+    setStreet(s);                                               // Set Street
+    setCity(c);                                                 // Set City
+    setState(st);                                               // Set Street
+    setZip(z);                                                  // Set ZIP
 }

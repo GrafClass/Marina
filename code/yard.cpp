@@ -7,47 +7,6 @@
 *                          Member functions should be able to do everything.
 ***************************************************/
 
-/******************************************
-*     library includes
-******************************************/
-#include <iostream>                // needed for I/O
-#include <cstdlib>                 // Needed because Grant's IDE requires it...for whatever reason
-
-/******************************************
-*     pre-processor
-******************************************/
-using namespace std;
-
-/****************************************
-*         Class definitions
-****************************************/
-class Yard 
-{
-      private:
-            bool map[1][100];   // Vacancy map: 1 = occupied, 0 = vacant
-            int idMap[1][100];  // ID numbers
-
-      public:
-            //Constructors:
-            Yard();
-
-            //setters
-            void setID(int x)                     {idMap[0][x] = x;}    // Sets the ID number
-            void setVacancy(bool x, int y)        {map[0][y] = x;}      // Bool arg: 1 = occupied, 0 = vacant; int = id
-
-            //getters
-            int getID(int x)                        {return idMap[0][x];}   // returns the ID number
-            bool getVacancy(int x)                  {return map[0][x];}     // returns the vacancy of a slip
-
-            //Member function prototypes
-            void check(int);        // Checks the vacancy of the slip number passed in the parameters.
-            void first();           // Iterates through the slip to find first open Slip.
-            void open();            // Displays the slip ID's that are currently vacant.
-            void display();         // Displays the slip ID's that are currently being rented.
-
-
-};
-
 /****************************************
 *         member functions
 ****************************************/
@@ -139,38 +98,3 @@ void Yard :: display()
     }
 
 }
-
-/*****************************************
-*   main() - the function that executes
-*****************************************/
-int main()
-{
-    Yard test;          // Tests for member functions
-    test.open();
-    cout << "\n";
-    test.display();
-    cout << "\n";
-    test.first();
-    cout << "\n";
-    test.first();
-    cout << "\n";
-    test.check(33);
-    cout << "\n";
-    test.display();
-    cout << "\n";
-
-	return 0;
-}  // end main
-
-
-
-
-
-
-
-
-
-
-
-
-

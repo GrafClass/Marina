@@ -1,0 +1,35 @@
+# Project: Marina
+# Makefile created by Dev-C++ 5.4.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = code/Marina.o code/person.o code/address.o
+LINKOBJ  = code/Marina.o code/person.o code/address.o
+LIBS     = -L"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+CXXINCS  = -I"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+BIN      = "Marina Clean.exe"
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+code/Marina.o: code/Marina.cpp
+	$(CPP) -c code/Marina.cpp -o code/Marina.o $(CXXFLAGS)
+
+code/person.o: code/person.cpp
+	$(CPP) -c code/person.cpp -o code/person.o $(CXXFLAGS)
+
+code/address.o: code/address.cpp
+	$(CPP) -c code/address.cpp -o code/address.o $(CXXFLAGS)
