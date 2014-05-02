@@ -34,7 +34,7 @@ double Payment :: reCalcTotals()
 // display
 void Payment :: displayPayment()
 {
-     // todo pass as string to interface class
+     // TODO pass as string to interface class
      //cout << "*****Payment Information*****\n";
      //cout << "Cost:      "<< getSubTotal()<<"\n";
      //cout << "Tax :      "<< getTax() <<"\n";

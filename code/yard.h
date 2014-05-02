@@ -10,8 +10,6 @@
 /******************************************
 *     library includes
 ******************************************/
-#include <iostream>                // needed for I/O
-#include <cstdlib>                 // Needed because Grant's IDE requires it...for whatever reason
 
 /******************************************
 *     pre-processor

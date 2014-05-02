@@ -3,6 +3,7 @@
 *  Authors: Nathan Vasquez 
 *           Samarjeet Rai
 *******************************************/
+#include "Payment.h"
 //************************************************Cash Class
 class Cash : public Payment
 {

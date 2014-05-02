@@ -3,6 +3,7 @@
 *  Authors: Nathan Vasquez 
 *           Samarjeet Rai
 *******************************************/
+#include "Payment.h"
 //**********************************************Check Class
 class Check : public Payment
 {

@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000001000000
-UnitCount=7
+UnitCount=17
 
 [VersionInfo]
 Major=1
@@ -61,7 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit8]
-FileName=code\yard.cpp
+FileName=code\Cash.cpp
 CompileCpp=1
 Folder=Marina
 Compile=1
@@ -71,7 +71,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit9]
-FileName=code\yard.h
+FileName=code\Cash.h
 CompileCpp=1
 Folder=Marina
 Compile=1
@@ -81,9 +81,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit10]
-FileName=code\address.h
+FileName=code\Check.cpp
 CompileCpp=1
-Folder=
+Folder=Marina
 Compile=1
 Link=1
 Priority=1000
@@ -121,9 +121,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit11]
-FileName=code\address.cpp
+FileName=code\Check.h
 CompileCpp=1
-Folder=
+Folder=Marina
 Compile=1
 Link=1
 Priority=1000
@@ -152,6 +152,66 @@ BuildCmd=
 
 [Unit5]
 FileName=code\Address.h
+CompileCpp=1
+Folder=Marina
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit12]
+FileName=code\Creditcard.cpp
+CompileCpp=1
+Folder=Marina
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit13]
+FileName=code\Creditcard.h
+CompileCpp=1
+Folder=Marina
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit14]
+FileName=code\Slip.cpp
+CompileCpp=1
+Folder=Marina
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit15]
+FileName=code\Slip.h
+CompileCpp=1
+Folder=Marina
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit16]
+FileName=code\Yard.cpp
+CompileCpp=1
+Folder=Marina
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit17]
+FileName=code\Yard.h
 CompileCpp=1
 Folder=Marina
 Compile=1

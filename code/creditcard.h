@@ -3,6 +3,7 @@
 *  Authors: Nathan Vasquez 
 *           Samarjeet Rai
 *******************************************/
+#include "Payment.h"
 //**************************************Credit Card Class
 class Credit_Card : public Payment
 {

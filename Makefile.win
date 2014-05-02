@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = code/Marina.o code/Person.o code/Address.o code/Payment.o
-LINKOBJ  = code/Marina.o code/Person.o code/Address.o code/Payment.o
+OBJ      = code/Marina.o code/Person.o code/Address.o code/Payment.o code/Cash.o code/Check.o code/Creditcard.o code/Slip.o code/Yard.o
+LINKOBJ  = code/Marina.o code/Person.o code/Address.o code/Payment.o code/Cash.o code/Check.o code/Creditcard.o code/Slip.o code/Yard.o
 LIBS     = -L"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
 INCS     = -I"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
 CXXINCS  = -I"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
@@ -36,3 +36,18 @@ code/Address.o: code/Address.cpp
 
 code/Payment.o: code/Payment.cpp
 	$(CPP) -c code/Payment.cpp -o code/Payment.o $(CXXFLAGS)
+
+code/Cash.o: code/Cash.cpp
+	$(CPP) -c code/Cash.cpp -o code/Cash.o $(CXXFLAGS)
+
+code/Check.o: code/Check.cpp
+	$(CPP) -c code/Check.cpp -o code/Check.o $(CXXFLAGS)
+
+code/Creditcard.o: code/Creditcard.cpp
+	$(CPP) -c code/Creditcard.cpp -o code/Creditcard.o $(CXXFLAGS)
+
+code/Slip.o: code/Slip.cpp
+	$(CPP) -c code/Slip.cpp -o code/Slip.o $(CXXFLAGS)
+
+code/Yard.o: code/Yard.cpp
+	$(CPP) -c code/Yard.cpp -o code/Yard.o $(CXXFLAGS)

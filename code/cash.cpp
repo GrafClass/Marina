@@ -3,7 +3,7 @@
 *  Authors: Nathan Vasquez 
 *           Samarjeet Rai
 *******************************************/
-#include "cash.h"
+#include "Cash.h"
 //default constructer
 Cash :: Cash()
 {

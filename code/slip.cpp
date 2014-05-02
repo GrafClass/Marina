@@ -6,6 +6,7 @@
 *      remarks:            This class is only for calculating the price and type
 *                          of a given length. (If the price is ridiculous, I apologize)
 ***************************************************/
+#include "Slip.h"
 /****************************************
 *         enum
 ****************************************/
@@ -55,7 +56,8 @@ Slip :: Slip(int length)
 /// Displays the length, type and price
 void Slip :: display()
 {
-    cout << "length:            "     << getLength() << " feet\n";
+    //TODO pass up as a string
+    /*cout << "length:            "     << getLength() << " feet\n";
     cout << "type:              ";
     switch(getType())
     {
@@ -67,34 +69,5 @@ void Slip :: display()
             break;
         case 4: cout << "unknown\n";
     }
-    cout << "price:             " << getPrice() << "$/month\n";
+    cout << "price:             " << getPrice() << "$/month\n";*/
 }
-
-
-/*****************************************
-*   main() - the function that executes
-*****************************************/
-int main()
-{
-    Slip test(10);          //Member function tests
-    test.display();        
-    cout << "\n";
-    Slip test2(75);
-    test2.display();
-    cout << "\n";
-
-	return 0;
-}  // end main
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -13,12 +13,13 @@
 #include "person.h"
 #include "address.h"
 #include "payment.h"
-//#include "slip.h"
-//#include "yard.h"
+#include "cash.h"
+#include "check.h"
+#include "creditcard.h"
+#include "slip.h"
+#include "yard.h"
 
-//#include "cash.h"
-//#include "check.h"
-//#include "creditcard.h"
+
 
 
 using namespace std;
