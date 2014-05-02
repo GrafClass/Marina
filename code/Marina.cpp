@@ -31,7 +31,7 @@ int main()
     /*******************************
     *     local variables
     ******************************/
-      
+    
  
     system("PAUSE");               // causes the program to pause
 	return 0;

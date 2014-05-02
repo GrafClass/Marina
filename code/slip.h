@@ -18,6 +18,8 @@ class Slip
               int length;
               int price;
               int type;
+              bool available;
+              
       public:
              //Constructor
              Slip();             //Default Constructor that defaults size of boat to 0. Cruze made it.
@@ -27,11 +29,15 @@ class Slip
              int setLength(int x)              {length = x;}
              int setPrice(int x)               {price = x;}
              int setType(int x)                {type = x;}
+             void setAvailable(bool a)         {available = a;}
+             
 
              //getters
              int getLength()                   {return length;}
              int getPrice()                    {return price;}
              int getType()                     {return type;}
+             bool getAvailable()               {return available;}
+             
 
              //Member function prototypes
              void display();             //Displays the slip length, type, and price 

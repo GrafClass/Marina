@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = code/Marina.o code/Person.o code/Address.o code/Payment.o code/Cash.o code/Check.o code/Creditcard.o code/Slip.o code/Yard.o
-LINKOBJ  = code/Marina.o code/Person.o code/Address.o code/Payment.o code/Cash.o code/Check.o code/Creditcard.o code/Slip.o code/Yard.o
+OBJ      = code/Marina.o code/Person.o code/Address.o code/Payment.o code/Cash.o code/Check.o code/Creditcard.o code/Slip.o code/Yard.o MarinaInterface.o
+LINKOBJ  = code/Marina.o code/Person.o code/Address.o code/Payment.o code/Cash.o code/Check.o code/Creditcard.o code/Slip.o code/Yard.o MarinaInterface.o
 LIBS     = -L"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
 INCS     = -I"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
 CXXINCS  = -I"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
@@ -51,3 +51,6 @@ code/Slip.o: code/Slip.cpp
 
 code/Yard.o: code/Yard.cpp
 	$(CPP) -c code/Yard.cpp -o code/Yard.o $(CXXFLAGS)
+
+MarinaInterface.o: MarinaInterface.cpp
+	$(CPP) -c MarinaInterface.cpp -o MarinaInterface.o $(CXXFLAGS)
