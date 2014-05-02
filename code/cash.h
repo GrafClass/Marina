@@ -1,3 +1,5 @@
+#ifndef CASH_H
+#define CASH_H
 /*******************************************
 *  Marina Payment Program
 *  Authors: Nathan Vasquez 
@@ -28,3 +30,4 @@ class Cash : public Payment
              void show();
       
 };
+#endif /* CASH_H */

@@ -1,3 +1,5 @@
+#ifndef PERSON_H
+#define PERSON_H
 // ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                   //
 // PROGRAM NAME:    Marina Person                                                                    //
@@ -40,3 +42,4 @@ public:
     std::string getPhone()               {return phone;}             // Set phone number
     std::string getPassword()            {return password;}          // Set password
 };
+#endif /* PERSON_H */

@@ -1,3 +1,5 @@
+#ifndef CHECK_H
+#define CHECK_H
 /*******************************************
 *  Marina Payment Program
 *  Authors: Nathan Vasquez 
@@ -29,3 +31,4 @@ class Check : public Payment
              void show();
 
 };
+#endif /* CHECK_H */

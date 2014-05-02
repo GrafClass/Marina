@@ -1,3 +1,5 @@
+#ifndef CREDITCARD_H
+#define CREDITCARD_H
 /*******************************************
 *  Marina Payment Program
 *  Authors: Nathan Vasquez 
@@ -25,3 +27,4 @@ class Credit_Card : public Payment
              //member functions
              void show();
 };
+#endif /* CREDITCARD_H */

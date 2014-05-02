@@ -1,3 +1,5 @@
+#ifndef PAYMENT_H
+#define PAYMENT_H
 /*******************************************
 *  Marina Payment Program
 *  Authors: Nathan Vasquez 
@@ -32,3 +34,4 @@ class Payment
              double reCalcTotals();
              void displayPayment();
 };
+#endif /* PAYMENT_H */

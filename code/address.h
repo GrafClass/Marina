@@ -1,3 +1,5 @@
+#ifndef ADDRESS_H
+#define ADDRESS_H
 // ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                   //
 // PROGRAM NAME:    Marina Person and Address                                                        //
@@ -6,6 +8,8 @@
 // REMARKS:                                                                                          //   
 //                                                                                                   //
 // ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 #include <string>
 // //////////////////////////////////////////////////
 //                                                 //
@@ -38,3 +42,4 @@ public:
     std::string getState()               {return state;}
     std::string getZip()                 {return zip;}
 };
+#endif /* ADDRESS_H */

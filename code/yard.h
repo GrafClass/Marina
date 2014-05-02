@@ -1,3 +1,5 @@
+#ifndef YARD_H
+#define YARD_H
 /**************************************************
 *
 *      program name:       yard-class
@@ -45,3 +47,4 @@ class Yard
 
 
 };
+#endif /* YARD_H */

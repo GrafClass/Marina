@@ -1,3 +1,5 @@
+#ifndef SLIP_H
+#define SLIP_H
 /**************************************************
 *
 *      program name:       Slip-Class
@@ -35,4 +37,4 @@ class Slip
              void display();             //Displays the slip length, type, and price 
 
 };
-
+#endif /* SLIP_H */
